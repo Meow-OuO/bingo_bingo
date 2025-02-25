@@ -13,5 +13,5 @@ function roll() {
     }
   }
 
-  document.getElementById("bingo").innerHTML = "開獎號碼: " + "&nbsp;" + arr.sort(function (a, b) { return a - b; });
+  document.getElementById("bingo").innerHTML = "開獎號碼: " + "&nbsp;" + arr.slice(0, 19).sort(function(a, b){ return a - b; }) + "&emsp;" + '超級獎號:' + arr[19];
 }
